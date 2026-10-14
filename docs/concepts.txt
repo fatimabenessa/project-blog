@@ -1,0 +1,15 @@
+==================================================
+Community Blog Website - Theoretical Concepts
+==================================================
+
+1. Difference between Static vs. Dynamic Websites:
+   - Static Websites: Consist of fixed content written in standard HTML, CSS, and basic JS. Every user sees the exact same content until the source files are manually updated by the developer. They are fast, secure, and easy to host.
+   - Dynamic Websites: Generate content in real-time based on user interactions, database queries, and server-side logic (e.g., WordPress, Facebook). Content changes dynamically for different users.
+
+2. Role of HTML, CSS, and JS in Building Blogs:
+   - HTML (HyperText Markup Language): Provides the structural backbone and semantics of the blog pages (headings, articles, navigation, footers).
+   - CSS (Cascading Style Sheets): Controls the visual layout, typography, color schemes, responsiveness, and aesthetic appeal.
+   - JavaScript (JS): Adds interactivity, dynamic content loading, form validation, and user action handling.
+
+3. Purpose of Folder Organization:
+   - Organizing files into dedicated directories (e.g., images/, css/, docs/) ensures maintainability, clean architecture, scalable code structure, and prevents path conflicts in web deployment.
