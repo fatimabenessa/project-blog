@@ -1,209 +1,49 @@
-/* ألوان وقواعد عامة */
-:root {
-    --primary-color: #1e293b;
-    --accent-color: #d4af37;
-    --accent-hover: #b89628;
-    --bg-color: #f1f5f9;
-    --card-bg: #ffffff;
-    --text-color: #334155;
-    --border-color: #cbd5e1;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Lovers Community - Blog Posts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-* {
-    box-sizing: border-box;
-}
+    <!-- Semantic Header with Logo & Nav -->
+    <header>
+        <div class="logo-container">
+            <span class="logo-icon">📚</span>
+            <h1>Literary Haven Club</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="posts.html" class="active">Blog Posts</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
+    <!-- Semantic Main Content -->
+    <main>
+        <article class="blog-post">
+            <h2>The Art of Deep Reading in a Digital Age</h2>
+            <p class="post-meta">Published on October 10, 2026 by Fatima</p>
+            <p>In today's fast-paced world, finding the time to immerse oneself in a comprehensive book can feel like a challenge. Deep reading allows us to develop critical thinking, empathy, and cognitive endurance.</p>
+            <img src="images/book1.jpg" alt="Person reading a book in a library">
+        </article>
 
-/* ترويسة الموقع */
-header {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1.2rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 4px solid var(--accent-color);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
+        <article class="blog-post">
+            <h2>Top 5 Classical Novels You Must Read This Year</h2>
+            <p class="post-meta">Published on October 12, 2026 by Fatima</p>
+            <p>Classical literature offers timeless wisdom and unforgettable storytelling. From Dickens to Austen, exploring these masterpieces expands our understanding of human history and emotion.</p>
+            <img src="images/book2.jpg" alt="Collection of classic vintage books">
+        </article>
+    </main>
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
+    <!-- Semantic Footer -->
+    <footer>
+        <p>&copy; 2026 Literary Haven Community Blog. All rights reserved.</p>
+    </footer>
 
-.logo-icon {
-    font-size: 2.2rem;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 1.6rem;
-    letter-spacing: 0.5px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 10px 18px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-}
-
-nav a:hover, nav a.active {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-}
-
-/* المحتوى الرئيسي */
-main {
-    max-width: 900px;
-    margin: 2.5rem auto;
-    padding: 0 1.5rem;
-}
-
-.hero-section {
-    background-color: var(--card-bg);
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-    margin-bottom: 2.5rem;
-}
-
-/* 🎯 بطاقة تسجيل الدخول الكبيرة الاحترافية (Login Card) */
-.login-section {
-    background-color: var(--card-bg);
-    padding: 2.5rem 2rem;
-    border-radius: 16px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-    margin: 2.5rem auto;
-    max-width: 480px; /* مربع احترافي عريض في المنتصف */
-    border-top: 6px solid var(--accent-color);
-}
-
-.login-section h3 {
-    margin-top: 0;
-    margin-bottom: 1.8rem;
-    color: var(--primary-color);
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 700;
-}
-
-.login-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    text-align: left;
-}
-
-.form-group label {
-    font-weight: 600;
-    font-size: 0.95rem;
-    color: var(--primary-color);
-}
-
-.form-group input {
-    width: 100%;
-    padding: 12px 16px;
-    border: 2px solid var(--border-color);
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.form-group input:focus {
-    outline: none;
-    border-color: var(--accent-color);
-    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.15);
-}
-
-.btn-login {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 14px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 0.8rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(30, 41, 59, 0.2);
-}
-
-.btn-login:hover {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(212, 175, 55, 0.3);
-}
-
-/* تنسيق المقالات والجداول */
-.blog-post {
-    background-color: var(--card-bg);
-    border-radius: 12px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-    border-left: 6px solid var(--accent-color);
-}
-
-.blog-post img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 1.2rem;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1.5rem;
-    background-color: var(--card-bg);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-}
-
-th, td {
-    padding: 14px 18px;
-    text-align: left;
-    border-bottom: 1px solid var(--border-color);
-}
-
-th {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-footer {
-    text-align: center;
-    padding: 1.8rem;
-    background-color: var(--primary-color);
-    color: white;
-    margin-top: 4rem;
-}
+</body>
+</html>
